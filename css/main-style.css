@@ -1,0 +1,93 @@
+html {
+  height: 100%; width: 100%;
+  background: url("../images/black-water-compressed.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  height: 100%; width: 100%;
+}
+header {
+  margin-left: 60px;
+  margin-right: 60px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  color: #9E1D1D;
+  font-family: 'PingFang SC';
+  font-weight: Semibold;
+  font-size: 1.75em;
+  text-decoration: none;
+  transition: 0.5s;
+}
+header a:hover {
+  color: white;
+}
+#social-media img {
+  height: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: 0.25s;
+}
+#main {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 30px;
+  padding-bottom: 70px;
+  display: flex;
+  align-items: center;
+  height: calc(100% - 158px);
+  position: relative;
+}
+nav {
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+.nav-item {
+  height: 80px;
+  text-align: center;
+}
+.active {
+  color: #9E1D1D;
+}
+nav a {
+  font-family: 'Avenir Next', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+  transition: 0.5s;
+}
+nav a:hover {
+  color: #9E1D1D;
+}
+iframe {
+  padding-left: 60px;
+  height: 100%;
+  width: 100%;
+}
+footer {
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+footer p {
+  font-family: 'Avenir Next', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.5em;
+  margin-right: 60px;
+}

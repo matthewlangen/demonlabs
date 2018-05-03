@@ -1,0 +1,78 @@
+html {
+  height: 100%;
+  width: 100%;
+  background: -moz-linear-gradient(top, rgba(158,29,29,0.3) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(158,29,29,0.3) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(158,29,29,0.3) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-repeat: no-repeat;
+}
+body {
+  height: 100%;
+  color: white;
+  padding: 60px;
+  overflow-x: hidden;
+}
+h1 {
+  font-family: 'Butler Stencil', serif;
+  font-size: 8em;
+  font-weight: medium;
+  padding-bottom: 30px;
+}
+#story {
+  width: 100%;
+}
+#story p {
+  font-family: 'Avenir Next', sans-serif;
+  padding-bottom: 20px;
+}
+#tubs-container {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.tub {
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  font-family: 'Avenir Next', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+.tub img {
+  height: 200px;
+  padding-bottom: 15px;
+}
+
+/******************************
+**            907PX          **
+******************************/
+@media all and (max-width: 907px) {
+  .tub {
+    margin-bottom: 30px;
+  }
+}
+/******************************
+**            615PX          **
+******************************/
+@media all and (max-width: 615px) {
+  h1 {
+    font-size: 5em;
+  }
+}
+
+/******************************
+**       450PX MOBILE        **
+******************************/
+
+@media all and (max-width: 450px) {
+  body {
+    padding: 30px;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+}

@@ -1,0 +1,41 @@
+html {
+  height: 100%;
+  width: 100%;
+  background: -moz-linear-gradient(top, rgba(158,29,29,0.3) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(158,29,29,0.3) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(158,29,29,0.3) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-repeat: no-repeat;
+}
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  content: url('../images/main-logo.png');
+  height: 60%;
+}
+
+
+/******************************
+**            615PX          **
+******************************/
+
+@media all and (max-width: 615px) {
+  img {
+    height: 50%;
+  }
+}
+
+/******************************
+**       450PX MOBILE        **
+******************************/
+
+@media all and (max-width: 450px) {
+  img {
+    content: url('../images/vertical-logo.png');
+    height: 60%;
+  }
+}

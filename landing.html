@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Landing Page</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/landing-style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <!-- Use "data-tilt" and tilt.js CDN to create perspective effect on logo hover-->
+  <img alt="DEMONLABS" data-tilt>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+</body>
+</html>
+
+<script>
+// Tilt.js options
+$(function() {
+  $('img').tilt({
+    maxTilt: 25,
+    perspective: 1400,
+    easing: "cubic-bezier(.03,.98,.52,.99)",
+    speed: 1200,
+    glare: true,
+    maxGlare: 0.2,
+    scale: 1.04
+  });
+});
+</script>

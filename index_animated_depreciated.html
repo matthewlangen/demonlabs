@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DEMONLABS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/main-style-animated.css">
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div id="loader-overlay"></div>
+  </div>
+
+  <!--MAIN CONTENT -->
+  <header>
+    <a id="logo" href="landing.html" target="frame" onclick="reset()">悪魔</a>
+    <div id="social-media">
+      <img src="images/instagram.svg" alt="instagram">
+      <img src="images/facebook.svg" alt="facebook">
+      <img src="images/twitter.svg" alt="twitter">
+    </div>
+  </header>
+  <div id="main">
+    <nav>
+      <div class="nav-item">
+        <a id="about" href="about.html" target="frame">About</a>
+      </div>
+      <div class="nav-item">
+        <a id="flavors" href="flavors.html" target="frame">Flavors</a>
+      </div>
+      <div class="nav-item">
+        <a id="contact" href="contact.html" target="frame">Contact</a>
+      </div>
+    </nav>
+    <iframe src="landing.html" name="frame"></iframe>
+  </div>
+  <footer>
+    <p>Designed and coded by Matthew Langen, 2018. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+<script>
+  // Make all nav items white
+  function reset() {
+    document.getElementById('about').classList.remove('active');
+    document.getElementById('flavors').classList.remove('active');
+    document.getElementById('contact').classList.remove('active');
+  }
+  //show final logo until main page fades in
+  var x = document.getElementById("loader");
+  x.addEventListener("webkitAnimationEnd", show());
+  function show() {
+    x.style.backgroundImage="url('images/animation/OG.png')";
+  }
+  //JQUERY
+  $(document).ready(function() {
+    // "load" for 4 seconds
+    setTimeout(function() {
+      $('body').addClass('loaded');
+    }, 3000);
+
+    // Fade in and out <iframe> on nav item click
+    $('nav div a, #logo').click(function(e) {
+      e.preventDefault();
+      reset();
+      src = this.href;
+      // turn clicked nav item red
+      this.classList.add('active');
+      // fade out, then fade in and change <iframe> source
+      $('iframe').fadeOut(1000, function() {
+        $('iframe').fadeIn(3000);
+        $('iframe').attr('src', src);
+      });
+    });
+  });
+</script>

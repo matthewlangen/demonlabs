@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Landing Page</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/contact-style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <h1>CONTACT</h1>
+  <div id="container">
+    <div id="info">
+      <p>
+        For more information about the company and our supplements, you can contact us using the form to the right, by phone at <span class="red">508.902.8023</span>, or by sending an email to <span class="red">hello@demonlabs.com</span>
+      </p>
+      <p>
+        Our mailing address is: <br><br>
+        <span class="red">
+          DEMONLABS <br>
+          66 Frederick Ave <br>
+          Medford, MA 02155
+        </span>
+      </p>
+      <!--img src="images/logo-edit.png" alt="Logo"-->
+    </div>
+    <div id="form">
+      <div id="row-1">
+        <div class="box">
+          <h2>Name</h2>
+          <input type="text" class="piece"/>
+        </div>
+        <div class="box">
+          <h2>Email</h2>
+          <input type="text" class="piece"/>
+        </div>
+      </div>
+      <div class="box">
+        <h2>Subject</h2>
+        <input type="text" class="piece"/>
+      </div>
+      <div class="box">
+        <h2>Message</h2>
+        <textarea class="piece"></textarea>
+      </div>
+      <button disabled="disabled">SUBMIT</button>
+    </div>
+  </div>
+</body>
+</html>
+
+<script>
+$(function() {
+  //USE JQUERY TO KEEP BUTTON DISABLED UNTIL ALL FIELDS HAVE TEXT
+  $('.piece').keyup(function() {
+    var empty = false;
+    $('.piece').each(function() {
+      if ($(this).val() == '') {
+        empty = true;
+      }
+    });
+    if (empty) {
+      $('button').attr('disabled', 'disabled');
+    }
+    else {
+      $('button').removeAttr('disabled');
+    }
+  });
+
+  //RESET ALL FIELDS WHEN SUBMIT IS CLICKED
+  $('button').click(function() {
+    $('.piece').each(function() {
+      $(this).val('');
+    });
+    $('button').attr('disabled', 'disabled');
+  });
+});
+</script>
