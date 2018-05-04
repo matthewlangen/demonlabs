@@ -5,6 +5,8 @@ html {
   background: -webkit-linear-gradient(top, rgba(158,29,29,0.3) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(158,29,29,0.3) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-repeat: no-repeat;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 @font-face {
@@ -20,7 +22,9 @@ body {
   height: 100%;
   color: white;
   padding: 60px;
-  overflow-x: hidden;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  /*overflow-x: hidden;*/
 }
 h1 {
   font-family: 'Butler Stencil', serif;
