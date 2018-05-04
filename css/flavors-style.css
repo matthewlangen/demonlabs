@@ -6,6 +6,16 @@ html {
   background: linear-gradient(to bottom, rgba(158,29,29,0.3) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-repeat: no-repeat;
 }
+
+@font-face {
+    font-family: 'Butler Stencil';
+    src: url('../butler_medium_stencil-webfont.woff2') format('woff2'),
+         url('../butler_medium_stencil-webfont.woff') format('woff');
+    /*font-weight: normal;*/
+    font-style: normal;
+
+}
+
 body {
   height: 100%;
   color: white;
