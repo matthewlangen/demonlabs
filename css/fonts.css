@@ -6,7 +6,7 @@
     font-family: 'Butler Stencil';
     src: url('../butler_medium_stencil-webfont.woff2') format('woff2'),
          url('../butler_medium_stencil-webfont.woff') format('woff');
-    font-weight: normal;
+    /*font-weight: normal;*/
     font-style: normal;
 
 }
