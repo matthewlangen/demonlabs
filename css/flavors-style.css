@@ -8,7 +8,7 @@ html {
 }
 
 @font-face {
-    font-family: 'Butler Stencil';
+    font-family: 'myFont';
     src: url('../butler_medium_stencil-webfont.woff2') format('woff2'),
          url('../butler_medium_stencil-webfont.woff') format('woff');
     /*font-weight: normal;*/
@@ -23,7 +23,7 @@ body {
   overflow-x: hidden;
 }
 h1 {
-  font-family: 'Butler Stencil', serif;
+  font-family: 'myFont', serif;
   font-size: 8em;
   font-weight: medium;
   padding-bottom: 30px;
