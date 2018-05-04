@@ -5,26 +5,19 @@ html {
   background: -webkit-linear-gradient(top, rgba(158,29,29,0.3) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(158,29,29,0.3) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-repeat: no-repeat;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
-@font-face {
-    font-family: 'myFont';
-    src: url('../butler_medium_stencil-webfont.woff2') format('woff2'),
-         url('../butler_medium_stencil-webfont.woff') format('woff');
-    /*font-weight: normal;*/
-    font-style: normal;
-
+@@font-face {
+  font-family: 'Butler Stencil';
+  src: url('Butler_Medium_Stencil.otf');
+  font-weight: medium;
 }
 
 body {
   height: 100%;
   color: white;
   padding: 60px;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  /*overflow-x: hidden;*/
+  overflow-x: hidden;
 }
 h1 {
   font-family: 'Butler Stencil', serif;
@@ -85,6 +78,8 @@ h1 {
 @media all and (max-width: 450px) {
   body {
     padding: 30px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
   h1 {
     font-size: 2.5em;
