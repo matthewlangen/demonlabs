@@ -139,6 +139,8 @@ button:disabled{
 @media all and (max-width: 450px) {
   body {
     padding: 30px;
+    overflow: auto !important;
+    -webkit-overflow-scrolling: touch !important;
   }
   #info, #form {
     width: 100%;
