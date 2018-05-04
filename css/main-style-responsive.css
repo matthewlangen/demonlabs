@@ -123,8 +123,15 @@ nav a {
 nav a:hover {
   color: #9E1D1D;
 }
+#scroll-wrapper {
+  -webkit-overflow-scrolling: touch;
+  	overflow-y: scroll;
+    padding-left: 60px;
+    height: 100%;
+    width: 100%;
+}
 iframe {
-  padding-left: 60px;
+  /*padding-left: 60px;*/
   height: 100%;
   width: 100%;
 }
