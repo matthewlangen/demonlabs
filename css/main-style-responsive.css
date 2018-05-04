@@ -129,6 +129,7 @@ nav a:hover {
     padding-left: 60px;
     height: 100%;
     width: 100%;
+    position: relative;
 }
 iframe {
   /*padding-left: 60px;*/
@@ -182,7 +183,7 @@ footer p {
     margin-right: 30px;
   }
   nav {
-    width: 80%;
+    width: 85%;
     margin: 0px 30px;
   }
   #main {
