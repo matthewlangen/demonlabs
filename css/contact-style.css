@@ -12,9 +12,8 @@ body {
   overflow-x: hidden;
 }
 h1 {
-  font-family: 'Butler Stencil', serif;
+  font-family: 'butler_stencilmedium';
   font-size: 8em;
-  font-weight: medium;
   color: white;
   padding-bottom: 30px;
 }
