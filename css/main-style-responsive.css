@@ -167,7 +167,7 @@ footer p {
   .nav-item {
     height: auto;
   }
-  iframe {
+  #scroll-wrapper {
     padding-left: 0px;
   }
 }
